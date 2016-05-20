@@ -3115,7 +3115,7 @@ numeric *PGTYPESnumeric_from_asc(char *str, char **endptr);
         <literal>+3.44</literal>,
         <literal>592.49E07</literal>或者
         <literal>-32.84e-4</literal>。
-   如果值解析不成功，返回一个有效指针，否则空指针。
+   如果值解析成功，返回一个有效指针，否则空指针。
    此刻ECPG总是解析完整的字符串，
    所以目前不支持存储在<literal>*endptr</literal>第一无效字符的地址。
    你可以安全地设置<literal>endptr</literal>为空。
